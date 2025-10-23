@@ -1,0 +1,229 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  color: #222;
+  background: #fff;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: #0a74da;
+  color: #fff;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+.btn {
+  background: white;
+  color: #0a74da;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffeb3b;
+  color: black;
+}
+
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
+  background: linear-gradient(120deg, #0a74da, #0078ff);
+  color: #fff;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.hero input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 180px;
+}
+
+.hero .primary-btn,
+.hero .secondary-btn {
+  background: white;
+  color: #0a74da;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero .primary-btn:hover,
+.hero .secondary-btn:hover {
+  background: #ffeb3b;
+  color: black;
+}
+
+/* ===== FEATURES ===== */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 60px 50px;
+  background: #f9f9f9;
+}
+
+.feature {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  margin-bottom: 25px;
+  color: #0a74da;
+}
+
+.testimonial-box {
+  background: #f0f8ff;
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 280px;
+}
+
+/* ===== PRICING ===== */
+.pricing {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.pricing h2 {
+  margin-bottom: 25px;
+  color: #0a74da;
+}
+
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #0a74da;
+  margin-bottom: 10px;
+}
+
+.card .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card button {
+  background: #0a74da;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #ffeb3b;
+  color: black;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  background: #0a74da;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+footer .socials a {
+  color: white;
+  margin: 0 5px;
+}
+
+footer .socials a:hover {
+  color: #ffeb3b;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
